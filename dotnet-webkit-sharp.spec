@@ -5,7 +5,7 @@ Summary:	WebKit# - A Mono WebKit binding
 Summary(pl.UTF-8):	WebKit# - wiązanie WebKit dla Mozilli
 Name:		dotnet-webkit-sharp
 Version:	0.2
-Release:	0.%{snap}.1
+Release:	0.%{snap}.2
 License:	X11/MIT
 Group:		Libraries
 Source0:	%{name}-%{version}-%{snap}.tar.bz2
@@ -53,11 +53,14 @@ Pliki programistyczne WebKit#.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	monodocdir=%{_libdir}/monodoc/sources \
 	pkgconfigdir=%{_pkgconfigdir}
+
+install samples/*.cs $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -72,3 +75,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_prefix}/lib/mono/webkit-sharp
 %{_pkgconfigdir}/*
 %{_libdir}/monodoc/sources/*
+%{_examplesdir}/%{name}-%{version}
