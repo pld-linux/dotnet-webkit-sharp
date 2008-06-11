@@ -2,10 +2,10 @@
 
 %include	/usr/lib/rpm/macros.mono
 Summary:	WebKit# - A Mono WebKit binding
-Summary(pl.UTF-8):	WebKit# - wiązanie WebKit dla Mozilli
+Summary(pl.UTF-8):	WebKit# - wiązanie WebKit dla Mono
 Name:		dotnet-webkit-sharp
 Version:	0.2
-Release:	0.%{snap}.2
+Release:	0.%{snap}.3
 License:	X11/MIT
 Group:		Libraries
 Source0:	%{name}-%{version}-%{snap}.tar.bz2
@@ -28,6 +28,12 @@ embedded in other applications, such as mail readers, or web browsers.
 This package provides Mono bindings for WebKit libraries.
 
 %description -l pl.UTF-8
+WebKit to silnik przeglądarki internetowej, wywodzący się z projektów
+KHTML i KJS dla platformy KDE, używany głównie w przeglądarce Safari
+firmy Apple. Stworzony został aby móc osadzać go w innych aplikacjach,
+takich jak czytniki poczty czy przeglądarki stron internetowych.
+
+Ten pakiet dostarcza dowiązań Mono do bibliotek WebKit.
 
 %package devel
 Summary:	WebKit# development files
