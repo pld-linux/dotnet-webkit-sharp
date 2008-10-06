@@ -1,15 +1,13 @@
-%define	snap	105457
-
 %include	/usr/lib/rpm/macros.mono
 Summary:	WebKit# - A Mono WebKit binding
 Summary(pl.UTF-8):	WebKit# - wiązanie WebKit dla Mono
 Name:		dotnet-webkit-sharp
 Version:	0.2
-Release:	0.%{snap}.3
+Release:	1
 License:	X11/MIT
 Group:		Libraries
-Source0:	%{name}-%{version}-%{snap}.tar.bz2
-# Source0-md5:	0e529b41b394e4188ae5b8b19b0914e4
+Source0:	http://ftp.novell.com/pub/mono/sources/webkit-sharp/webkit-sharp-%{version}.tar.bz2
+# Source0-md5:	8041fba941b7299e432380c86b6dddf8
 URL:		http://www.mono-project.com/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -48,7 +46,7 @@ WebKit# development files.
 Pliki programistyczne WebKit#.
 
 %prep
-%setup -q
+%setup -q -n webkit-sharp-%{version}
 
 %build
 %{__aclocal}
