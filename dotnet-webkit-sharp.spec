@@ -61,7 +61,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	monodocdir=%{_libdir}/monodoc/sources \
+	docsdir=%{_libdir}/monodoc/sources \
 	pkgconfigdir=%{_pkgconfigdir}
 
 install samples/*.cs $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
