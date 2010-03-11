@@ -1,0 +1,11 @@
+diff -urN webkit-sharp-0.3/sources/webkit-sharp.pc.in webkit-sharp-0.3.new//sources/webkit-sharp.pc.in
+--- webkit-sharp-0.3/sources/webkit-sharp.pc.in	2009-10-21 21:54:23.000000000 +0200
++++ webkit-sharp-0.3.new//sources/webkit-sharp.pc.in	2010-03-11 22:38:38.895114139 +0100
+@@ -1,6 +1,6 @@
+ prefix=@prefix@
+ exec_prefix=${prefix}
+-libdir=@libdir@
++libdir=${exec_prefix}/lib
+ 
+ Name: @ASSEMBLY_TITLE@
+ Description: @ASSEMBLY_DESCRIPTION@
