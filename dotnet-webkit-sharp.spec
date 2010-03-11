@@ -3,11 +3,12 @@ Summary:	WebKit# - A Mono WebKit binding
 Summary(pl.UTF-8):	WebKit# - wiązanie WebKit dla Mono
 Name:		dotnet-webkit-sharp
 Version:	0.3
-Release:	1
+Release:	2
 License:	X11/MIT
 Group:		Libraries
 Source0:	http://ftp.novell.com/pub/mono/sources/webkit-sharp/webkit-sharp-%{version}.tar.bz2
 # Source0-md5:	21482f9d5eafb0ef4acc6e790482f934
+Patch0:		%{name}-pc.patch
 URL:		http://www.mono-project.com/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -47,6 +48,7 @@ Pliki programistyczne WebKit#.
 
 %prep
 %setup -q -n webkit-sharp-%{version}
+%patch0 -p1
 
 %build
 %{__aclocal}
