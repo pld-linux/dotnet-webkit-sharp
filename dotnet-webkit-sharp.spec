@@ -15,7 +15,7 @@ BuildRequires:	automake
 BuildRequires:	dotnet-gtk-sharp2-devel >= 1.9.3
 BuildRequires:	gtk-webkit-devel >= 1.1.15
 BuildRequires:	mono-csharp >= 1.1.0
-BuildRequires:	monodoc >= 1.0
+BuildRequires:	monodoc >= 2.6
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,6 +39,7 @@ Summary:	WebKit# development files
 Summary(pl.UTF-8):	Pliki programistyczne WebKit#
 Group:		Development/Libraries
 Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	monodoc >= 2.6
 
 %description devel
 WebKit# development files.
