@@ -38,7 +38,7 @@ Ten pakiet dostarcza dowiązań Mono do bibliotek WebKit.
 Summary:	WebKit# development files
 Summary(pl.UTF-8):	Pliki programistyczne WebKit#
 Group:		Development/Libraries
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 Requires:	monodoc >= 2.6
 
 %description devel
