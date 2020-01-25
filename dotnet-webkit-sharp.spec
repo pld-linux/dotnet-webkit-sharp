@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.mono
 Summary:	WebKit# - A Mono WebKit binding
 Summary(pl.UTF-8):	WebKit# - wiązanie WebKit dla Mono
 Name:		dotnet-webkit-sharp
