@@ -52,7 +52,7 @@ Pliki programistyczne WebKit#.
 
 %prep
 %setup -q -n webkit-sharp-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__aclocal}
